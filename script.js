@@ -48,7 +48,11 @@ $(document).ready( function(){
 
         $('#start').hide();
         
-        dragAndDrop() ; 
+        dragAndDrop(); 
+        // $('.generatedPair').css('opacity', '0');
+        $('.generatedPair').addClass('generatedPairCenter');
+        $('.generatedPair ul').css('width', '47.5%');
+        // $('.generatedPair').css('opacity', '1');
       }
     })
   })();
