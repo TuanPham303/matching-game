@@ -6,6 +6,7 @@ $(document).ready( function(){
   let item2ArrayRandom = [];
 
   $('#start').hide();
+  $('#newGame').hide();
 
   (function handleSubmit(){
     $('#submit').click( () => {
@@ -34,6 +35,7 @@ $(document).ready( function(){
       shuffleArray(item1ArrayRandom);
       shuffleArray(item2ArrayRandom);
       $('#inputWrap').hide();
+      $('#newGame').show();
       $('.list1').html('');
       $('.list2').html('');
       for (let i = 0; i < item1ArrayRandom.length; i++){
@@ -69,6 +71,12 @@ $(document).ready( function(){
           }
         }
       });
+    })
+  })();
+
+  (function handleNewGame(){
+    $('#newGame').click( () => {
+      location.reload();
     })
   })();
 

@@ -93,3 +93,20 @@ input:focus {
   opacity: 1;
   cursor: pointer;
 }
+#newGame {
+  position: absolute;
+  left: 25%;
+  /* transform: translateX(-50%); */
+  height: 50px;
+  width: 140px;
+  border-radius: 5px;
+  background-color: #446CB3;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.8;
+}
+#newGame:hover {
+  opacity: 1;
+  cursor: pointer;
+}
