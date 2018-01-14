@@ -5,16 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+
+
   <title>Document</title>
 </head>
 <body>
-  <p>Enter your pair</p>
-  <input id="item1" type="text" placeholder="Item 1">
-  <input id="item2" type="text" placeholder="Item 2">
-  <button id="submit">Submit</button>
-  <div class="generatedPair"></div>
+  <div id="inputWrap">
+    <p>Enter your pair</p>
+    <div class="inputWrap">    
+      <input class="input" id="item1" type="text" placeholder="Item 1">
+      <input class="input" id="item2" type="text" placeholder="Item 2">
+      <button id="submit">Submit</button>
+    </div>
+  </div>
 
+  <div class="generatedPair">
+    <ul class='list1'>
+     
+    </ul>
+    <ul class='list2'>
+      
+    </ul>
+  </div>
 
+  <button id="start">Start</button>
 
   <script src="script.js"></script>
 </body>
