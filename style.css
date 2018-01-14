@@ -52,6 +52,9 @@ input:focus {
   color: #03C9A9;
   font-size: 18px;
 }
+.inputWrap > #submit:focus {
+  outline: 0;
+}
 
 .generatedPair {
   display: flex;
